@@ -6,7 +6,7 @@ public class HelloSpringApp {
 
 	public static void main(String[] args) {
 		
-		//Load the spring config file
+		//Load the spring configuration file
 		ClassPathXmlApplicationContext context = 
 					new ClassPathXmlApplicationContext("applicationContext.xml");
 		
@@ -15,6 +15,9 @@ public class HelloSpringApp {
 		
 		//Call methods on the bean
 		System.out.println(theCoach.getDailyWorkout());
+		
+		//New method for fortune
+		System.out.println(theCoach.getDailyFortune());
 		
 		//Close the context
 		context.close();
