@@ -12,11 +12,15 @@ public class SetterDemoApp {
 		//Retrieve bean from spring container
 		CricketCoach theCoach = context.getBean("myCricketCoach", CricketCoach.class);
 		//Call methods on the bean
-		
-		
+
 		System.out.println(theCoach.getDailyWorkout());
 		System.out.println(theCoach.getDailyFortune());
-			
+
+		//Calling the new methods to get the literal values
+		
+		System.out.println(theCoach.getEmailAdress());
+		System.out.println(theCoach.getTeam());
+		
 		//Close the context
 		context.close();
 	}
